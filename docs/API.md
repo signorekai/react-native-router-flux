@@ -44,6 +44,9 @@
 | `onLeft`     | `boolean` | `false` | load child scenes as [DrawerNavigator](https://reactnavigation.org/docs/navigators/drawer) |
 | `onRight`     | `Function` |  | Called when the right nav bar button is pressed. |
 | `onLeft`     | `Function` |  | Called when the left nav bar button is pressed. |
+| `renderTitle` | `React.Component` | | Component to render custom title |
+| `rightButtonImage`     | `Image` |  | Image to substitute for the right nav bar button |
+| `rightButtonTextStyle`     | `Style` |  | Style applied to right button text |
 | `showLabel`     | `boolean` | `true`  | Boolean to show or not the tabbar icons labels |
 | `success`     | `Function` | | If `on` returns a "truthy" value then `success` is called. |
 | `swipeEnabled`     | `boolean` | `true` | Enable or disable swiping tabs. |
@@ -53,8 +56,6 @@
 | `type`   | `string` | `push` | Optional type of navigation action. You could use `replace` to replace current scene with this scene |
 | `title`     | `string` |  | Text to be displayed in the center of the nav bar. |
 | `titleStyle`     | `Style` |  | Style applied to the title |
-| `rightButtonImage`     | `Image` |  | Image to substitute for the right nav bar button |
-| `rightButtonTextStyle`     | `Style` |  | Style applied to right button text |
 | all other props     |  |  | Any other props not listed here will be pass on to the specified `Scene`'s `component` |
 
 ## Actions
