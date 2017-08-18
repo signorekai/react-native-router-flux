@@ -22,10 +22,10 @@
 | `animationEnabled`     | `boolean` | `true` | Enable or disable animating tabs on switch. |
 | `back`     | `boolean` | `false` | Show a back button on the left side of the nav bar that calls `Actions.pop` on press. |
 | `clone`     | `boolean` | `false` | Scenes marked with `clone` will be treated as templates and cloned into the current scene's parent when pushed. See example. |
+| `component` | `React.Component` | `semi-required` | The `Component` to be displayed. Not required when defining a nested `Scene`, see example. |
 | `contentComponent`     | `React.Component` |  | Component used to render the content of the drawer (e.g. navigation items). |
 | `drawer`     | `boolean` | `false` | load child scenes inside [DrawerNavigator](https://reactnavigation.org/docs/navigators/drawer) |
 | `drawerImage`     | `Image` |  | Image to substitute drawer 'hamburger' icon, you have to set it together with `drawer` prop |
-| `component` | `React.Component` | `semi-required` | The `Component` to be displayed. Not required when defining a nested `Scene`, see example. |
 | `failure`     | `Function` | | If `on` returns a "falsey" value then `failure` is called. |
 | `headerBackTitle`     | `string` |  | Specifies the back button title for scene |
 | `headerMode` | `string` | `float` | Specifies how the header should be rendered: `float` (render a single header that stays at the top and animates as screens are changed. This is a common pattern on iOS.), `screen` (each screen has a header attached to it and the header fades in and out together with the screen. This is a common pattern on Android) or `none` (No header will be rendered) |
@@ -50,9 +50,9 @@
 | `showLabel`     | `boolean` | `true`  | Boolean to show or not the tabbar icons labels |
 | `success`     | `Function` | | If `on` returns a "truthy" value then `success` is called. |
 | `swipeEnabled`     | `boolean` | `true` | Enable or disable swiping tabs. |
-| `tabs`     | `boolean` | `false` | load child scenes as [TabNavigator](https://reactnavigation.org/docs/navigators/tab). Other [Tab Navigator  props](https://reactnavigation.org/docs/navigators/tab#TabNavigatorConfig) also apply here. |
-| `tabBarComponent`     | `React.Component` |  | React component to render custom tab bar |
+| `tabBarComponent`     | `React.Component` |  | Component to render custom tab bar |
 | `tabBarPosition`     | `string` |  | Specifies tabbar position. Defaults to `bottom` on iOS and `top` on Android. |
+| `tabs`     | `boolean` | `false` | load child scenes as [TabNavigator](https://reactnavigation.org/docs/navigators/tab). Other [Tab Navigator  props](https://reactnavigation.org/docs/navigators/tab#TabNavigatorConfig) also apply here. |
 | `type`   | `string` | `push` | Optional type of navigation action. You could use `replace` to replace current scene with this scene |
 | `title`     | `string` |  | Text to be displayed in the center of the nav bar. |
 | `titleStyle`     | `Style` |  | Style applied to the title |
