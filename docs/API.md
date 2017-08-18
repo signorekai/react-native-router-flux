@@ -41,7 +41,6 @@
 | `navigationBarStyle`     | `Style` | | Style applied to nav bar |
 | `on`     | `Function` | | aka `onEnter`. Called when the `Scene` is navigated to. `props` are provided as a function param |
 | `onExit`     | `Function` | | Called when the `Scene` is navigated away from. |
-| `onLeft`     | `boolean` | `false` | load child scenes as [DrawerNavigator](https://reactnavigation.org/docs/navigators/drawer) |
 | `onRight`     | `Function` |  | Called when the right nav bar button is pressed. |
 | `onLeft`     | `Function` |  | Called when the left nav bar button is pressed. |
 | `renderTitle` | `React.Component` | | Component to render custom title |
